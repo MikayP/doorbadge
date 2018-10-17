@@ -1,0 +1,30 @@
+body{
+    width:100%;
+    background-color:rgba(18, 18, 142, 0.25);
+}
+
+.mainImage{
+    border-radius: 50%;
+   margin:0 auto;
+}
+
+button{
+    border-radius: 10px;
+    height:50px;
+    width:150px;
+    background-color:rgba(38, 38, 102, 0.79);
+    border: 1px black solid;
+    box-shadow: 1px 1px 5px grey;
+    color:white;
+    font-size:26px;
+    font-family: sans-serif;
+}
+
+button:hover{
+    background-color:rgba(83, 70, 70, 0.44);
+}
+
+p{
+    font-size: 26px;
+    font-family: sans-serif;
+}
