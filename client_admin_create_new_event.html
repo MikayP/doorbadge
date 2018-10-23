@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doorbadge - Client Login</title>
+    <title>Doorbadge - Create New Event</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles.css">
@@ -29,16 +29,23 @@
         <section class="page-layout ">
 
             <div class="container">
-                <h1>Welcome</h1>
-<!--Content goes here-->
+                <h1 class="pb-5">Client Admin Create New Event</h1>
+
+                <form>
+                    <input class="d-flex justify-content-center" type="text" name="eventName" placeholder="Event Name">
+                    <input class="d-flex justify-content-center" type="text" name="contactName" placeholder="Contact Name">
+                    <input class="d-flex justify-content-center" type="text" name="contactEmail" placeholder="Contact Email">
+                    <input class="d-flex justify-content-center" type="text" name="Contact Phone" placeholder="Contact Phone Number">
+                    <input type="file" class="d-flex justify-content-center inputfile " name="pic" accept="image/*">
+                    <button class="d-flex justify-content-center">Create</button>
+
+                </form>
             </div>
 
         </section>
 
 
     </div>
-
-
 
 
 
