@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doorbadge - Create New Event</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="">
+
+       <nav class="navbar navbar-expand-md navbar-light ">
+            <button class="navbar-toggler fixed-top" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav flex-column ">
+                    <a class="nav-item" href="#">HOME</a>
+                    <a class="nav-item" href="#">FACILITY LOGIN<span class="sr-only">(current)</span></a>
+                    <a class="nav-item" href="#">LOVED ONES LOGIN</a>
+                    <a class="nav-item" href="#">GUESTS</a>
+                    <a class="nav-item" href="#">CONTACT</a>
+                    <a class="nav-item" href="#">LOG OUT</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="page-layout ">
+
+            <div class="container">
+                <h1 class="pb-5">Loved One Create New Event</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p class="eventHeader">Event 1</p>
+                            <form>
+                                <input class="d-flex justify-content-center inputs" type="text" name="eventName" placeholder="Event Name">
+                                <input class="d-flex justify-content-center inputs" id="datepicker" type="text" name="eventDate" placeholder="Date">
+
+                                <div class="input-group mb-3 d-flex justify-content-center">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary dropdown-toggle dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type of Event</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Celebration of Life</a>
+                                            <a class="dropdown-item" href="#">Funeral</a>
+                                            <a class="dropdown-item" href="#">Wake</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input class="d-flex justify-content-center inputs" type="text" name="mainContactName" placeholder="Main Contact Name">
+                                <input class="d-flex justify-content-center inputs" type="text" name="contactEmail" placeholder="Contact Email">
+                                <input class="d-flex justify-content-center inputs" type="text" name="contactPhone" placeholder="Contact Phone">
+                                <input class="d-flex justify-content-center inputs" type="text" name="contactAddress" placeholder="Address">
+
+                                <div class="input-group mb-3 d-flex justify-content-center">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary dropdown-toggle dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Preferred Contact Method</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Email</a>
+                                            <a class="dropdown-item" href="#">Phone</a>
+                                            <a class="dropdown-item" href="#">Mail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input class="d-flex justify-content-center inputs" type="text" name="notes" placeholder="Notes">
+                                <input class="d-flex justify-content-center inputs" type="text" name="Contact Phone" placeholder="Event Code (If Applicable)">
+                                <input type="file" class="d-flex justify-content-center inputfile " name="pic" accept="image/*">
+                            </form>
+                        </div>
+
+                        <div class="col">
+                            <form>
+                                <p class="eventHeader">Event 2 <span class="ifNeeded">(If Applicable)</span></p>
+                                <input class="d-flex justify-content-center inputs" type="text" name="eventName" placeholder="Event Name">
+                                <input class="d-flex justify-content-center inputs" id="datepicker" type="text" name="eventDate" placeholder="Date">
+
+                                <div class="input-group mb-3 d-flex justify-content-center">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary dropdown-toggle dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type of Event</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Celebration of Life</a>
+                                            <a class="dropdown-item" href="#">Funeral</a>
+                                            <a class="dropdown-item" href="#">Wake</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <input class="d-flex justify-content-center inputs" type="text" name="mainContactName" placeholder="Main Contact Name">
+                                <input class="d-flex justify-content-center inputs" type="text" name="contactEmail" placeholder="Contact Email">
+                                <input class="d-flex justify-content-center inputs" type="text" name="contactPhone" placeholder="Contact Phone">
+                                <input class="d-flex justify-content-center inputs" type="text" name="contactAddress" placeholder="Address">
+
+                                <div class="input-group mb-3 d-flex justify-content-center ">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary dropdown-toggle dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Preferred Contact Method</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Email</a>
+                                            <a class="dropdown-item" href="#">Phone</a>
+                                            <a class="dropdown-item" href="#">Mail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input class="d-flex justify-content-center inputs" type="text" name="notes" placeholder="Notes">
+                                <input class="d-flex justify-content-center inputs" type="text" name="Contact Phone" placeholder="Event Code (If Applicable)">
+                                <input type="file" class="d-flex justify-content-center inputfile " name="pic" accept="image/*">
+
+
+                            </form>
+
+                        </div>
+
+                    </div>
+                      <button class="d-flex justify-content-center">Create</button>
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </div>
+
+
+<footer class="">Doorbadge 2018</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

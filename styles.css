@@ -1,8 +1,17 @@
+html,
+body {
+    height: 100%
+}
+
 body {
     width: 100%;
     height: 100%;
-    background-color: rgba(18, 18, 142, 0.15);
-
+    background-color: #fffaf1;
+    background-image: url('Images/flower.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /*The Nav*/
@@ -14,65 +23,67 @@ body {
 }
 
 .nav-item {
-    font-size: 36px;
+    font-size: 28px;
     border-bottom: 2px solid #2D507A;
-  color:#2D507A;
-    font-family: sans-serif;
+    color: #2D507A;
+    font-family: 'Lato', sans-serif;
     text-align: center;
-    text-shadow: 1px 1px 5px #766b6b;
+    text-shadow: 1px 1px 5px #000000;
     border-bottom: solid 2px white;
 }
 
 .nav-item:hover {
     text-decoration-line: none;
-    color:black;
-    opacity: 0.5;
+    color: rgba(29, 185, 74, 0.82);
     font-weight: bold;
 }
 
-/*Content*/
+/*Footer*/
 
-.page-layout {
-    height: 100vh;
-    background-image: url(Images/dbTransparent.gif);
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-position: center;
+footer {
+    position: fixed;
+    margin-left: 315px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2D507A;
+    color: rgba(255, 255, 255, 0.99);
+    text-align: right;
 
 }
+
+.wrapper {
+    min-height: calc(100vh - 120px);
+}
+
+/*Welcome Page*/
+.jumbo {
+    padding-top: 90px;
+}
+
 
 
 button {
     border-radius: 10px;
     height: 50px;
     width: 150px;
-    background-color: #2D507A;
+    background-color: #56a36c;
     border: 1px black solid;
     box-shadow: 1px 1px 5px grey;
     color: white;
     font-size: 26px;
-    font-family: sans-serif;
-
-    margin:0 auto;
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
 }
 
 button:hover {
     background-color: rgba(83, 70, 70, 0.44);
 }
 
-.socialButton{
-    width:300px;
+.socialButton {
+    width: 300px;
 }
 
-input{
-    text-align: center;
-        height:50px;
-    width:400px;
-    border-radius: 10px;
-    margin:0 auto;
-    margin-bottom: 20px;
-
-}
 
 h1 {
     padding-top: 120px;
@@ -80,16 +91,88 @@ h1 {
     color: #2D507A;
     font-size: 3em;
     text-shadow: 1px 1px 2px grey;
+    font-family: 'Lato', sans-serif;
 }
 
+.eventHeader {
+    padding-top: 30px
+}
+
+h3 {
+    color: #2D507A;
+}
 
 
 p {
     font-size: 26px;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+
+/*Event Lists*/
+
+table {
+    width: 600px;
+    margin: 0 auto;
+
+
+}
+
+th,
+td {
+    font-family: 'Lato', sans-serif;
+    padding: 5px;
+}
+
+th {
+    font-size: 1.5em;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(54, 44, 44, 0.22);
 }
 
 
+/*Input Edits*/
+
+input {
+    text-align: center;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.inputs {
+    box-shadow: .5px .5px 3px;
+}
+
+.dropdown {
+    background-color: white;
+    border-radius: 10px !important;
+    border-top-right-radius: 50px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    box-shadow: .5px .5px 3px;
+}
+
+
+.eventHeader {
+    color: #2D507A;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px grey;
+    font-family: 'Lato', sans-serif;
+}
+
+.ifNeeded {
+    font-size: 1.3rem;
+}
 
 /*Media Queries*/
 @media screen and (max-width: 766px) {
@@ -109,11 +192,17 @@ p {
 
     }
 
+    .jumbo {
+        padding-top: 0px;
+        height: 500px;
+        width: 100%;
+    }
+
     .nav-item {
         width: 280px;
         padding: 20px 0px 20px 0px;
         text-align: left;
-              color: #fff;
+        color: #fff;
 
     }
 
